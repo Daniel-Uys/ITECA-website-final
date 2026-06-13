@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #6a8097; " >
+    <h1 style="color: #21354e; text-align: center;"  >Admin page</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <h3 style="color: #21354e; text-align: center;"  >Database of users</h3>
+
+
+    <!-- search for someone in the database -->
+ <!-- username  mx-auto aligns automaticallt to left and right margin-->
+     <div class="container w-50 mt-5 mx-auto">
+        <label for="search" class="form-label">Search for username or email </label>
+        <input type="text" class="form-control" id="usernameemail" placeholder="Username or email">
+     </div>
+     <br>
+     <br>
+    <!-- Table which lists index, users, email and listings -->
+    <table class="table table-hover table-light">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Username</th>
+      <th scope="col">Email</th>
+      <th scope="col">Amount of listings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>
+
+ <!-- delete and ban buttons -->
+  <div class="d-flex gap-2 justify-content-center">
+    <button type="button" class="btn btn-danger btn-lg">Delete</button>
+    <button type="button" class="btn btn-danger btn-lg">Ban</button>
+ </div>
+
+
+</body>
+
+</html>
+
+<!-- note to self
+    clicking on a user in the db shows their listings/all their info
+
+
+-->
